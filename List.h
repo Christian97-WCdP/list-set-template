@@ -18,8 +18,8 @@ class List {
 private:
 	Node<T> *start;
 	Node<T> *end;
-	void insertNode(T dataIN);
-	void insertSort(T dataIN);
+	void insertNode(T dataIN); //make this function public to use as normal list
+	void insertSort(T dataIN);//make this function public to use as sorted list
 public:
 	List();
 	~List();
