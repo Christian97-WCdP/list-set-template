@@ -30,6 +30,7 @@ public:
 	T getData();
 	void setNext(Node<T> *p);
 	void setPrev(Node<T>* p);
+	void setData(T dataIN);
 	Node<T>* getNext();
 	Node<T>* getPrev();
 
@@ -52,6 +53,10 @@ T Node<T>::getData() {
 	return data;
 }
 
+template <typename T>
+void Node<T>:: setData(T dataIN){
+	this->data=dataIN;
+}
 template<typename T>
 void Node<T>::setNext(Node<T> *p) {
 	next = p;
